@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Happy Birthday, My Love [Her Name]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd9 50%, #f06292 100%);
+            margin: 0;
+            padding: 20px;
+            color: #4a148c;
+            line-height: 1.6;
+            text-align: center;
+            overflow-x: hidden;
+            min-height: 100vh;
+            text-size-adjust: 100%;
+        }
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem;
+            color: #c2185b;
+            margin-bottom: 0.5em;
+            letter-spacing: 0.05em;
+            animation: heartbeat 1.5s ease-in-out infinite alternate;
+            transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.05); }
+        }
+        h1:active, h1:focus-visible {
+            animation: tap-ripple 0.4s ease-out;
+            transform: scale(1.08);
+            box-shadow: 0 0 20px rgba(194, 24, 91, 0.5);
+            outline: 2px dashed #ad1457;
+            outline-offset: 4px;
+        }
+        @keyframes tap-ripple {
+            0% { transform: scale(1); box-shadow: 0 0 0 rgba(194, 24, 91, 0); }
+            50% { transform: scale(1.08); box-shadow: 0 0 20px rgba(194, 24, 91, 0.5); }
+            100% { transform: scale(1); box-shadow: 0 0 0 rgba(194, 24, 91, 0); }
+        }
+        h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.2rem;
+            color: #ad1457;
+            margin: 2.5rem 0 1.25rem;
+        }
+        .message {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 1.875rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(194, 24, 91, 0.2);
+            border: 2px solid rgba(194, 24, 91, 0.3);
+            transition: transform 0.2s ease-in-out;
+            hyphens: auto;
+        }
+        .message:active, .message:focus-visible {
+            transform: translateY(-2px);
+            outline: 2px solid #c2185b;
+            outline-offset: 2px;
+        }
+        .love-reasons {
+            max-width: 600px;
+            margin: 2.5rem auto;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 1.5625rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(194, 24, 91, 0.15);
+            transition: transform 0.2s ease-in-out;
+            hyphens: auto;
+        }
+        .love-reasons:active, .love-reasons:focus-visible {
+            transform: translateY(-1px);
+            outline: 2px solid #ad1457;
+            outline-offset: 2px;
+        }
+        .love-reasons h3 {
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            color: #c2185b;
+            margin-bottom: 1.25rem;
+        }
+        .love-reasons ul {
+            list-style: none;
+            padding: 0;
+        }
+        .love-reasons li {
+            font-size: 1.1rem;
+            margin: 0.9375rem 0;
+            padding-left: 1.25rem;
+            position: relative;
+            transition: color 0.2s ease-in-out;
+        }
+        .love-reasons li:active, .love-reasons li:focus-visible {
+            color: #c2185b;
+            outline: none;
+        }
+        .love-reasons li:before {
+            content: '💖';
+            position: absolute;
+            left: 0;
+            transition: transform 0.2s ease-in-out;
+        }
+        .love-reasons li:active:before {
+            transform: scale(1.2);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5625rem;
+            max-width: 1000px;
+            margin: 0 auto 2.5rem;
+        }
+        .gallery img {
+            width: 100%;
+            height: 25rem;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 35px rgba(194, 24, 91, 0.3);
+            transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+            border: 3px solid rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+        }
+        .gallery img:hover {
+            transform: scale(1.02) rotate(1deg);
+            box-shadow: 0 15px 45px rgba(194, 24, 91, 0.4);
+        }
+        .gallery img:active, .gallery img:focus-visible {
+            animation: touch-pulse 0.6s ease-out;
+            transform: scale(0.95) rotate(0deg);
+            outline: 3px solid #c2185b;
+            outline-offset: 4px;
+        }
+        @keyframes touch-pulse {
+            0% { 
+                transform: scale(1) rotate(1deg); 
+                box-shadow: 0 10px 35px rgba(194, 24, 91, 0.3);
+            }
+            20% { 
+                transform: scale(0.95); 
+                box-shadow: 0 15px 45px rgba(194, 24, 91, 0.6);
+            }
+            100% { 
+                transform: scale(1.02) rotate(1deg); 
+                box-shadow: 0 15px 45px rgba(194, 24, 91, 0.4);
+            }
+        }
+        footer {
+            margin-top: 3.125rem;
+            font-size: 1rem;
+            color: #ad1457;
+            font-style: italic;
+            transition: color 0.2s ease-in-out;
+        }
+        footer:active, footer:focus-visible {
+            color: #c2185b;
+            outline: 1px dotted #c2185b;
+        }
+        
+        /* Skip Link Styles */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #c2185b;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 1000;
+            transition: top 0.3s ease-in-out;
+            font-family: 'Poppins', sans-serif;
+        }
+        .skip-link:focus {
+            top: 6px;
+            outline: 2px solid #fff;
+        }
+        
+        /* Extra-small screens (phones <480px) */
+        @media (max-width: 480px) {
+            body { padding: 15px; }
+            h1 { font-size: 3rem; }
+            h2 { font-size: 1.8rem; }
+            .message { font-size: 1.1rem; padding: 1.25rem; }
+            .love-reasons { padding: 1.25rem; margin: 1.5rem auto; }
+            .love-reasons li { font-size: 1rem; margin: 0.75rem 0; }
+            .gallery { gap: 1rem; }
+            .gallery img { height: 15rem; }
+            .gallery img, h1 { transition-duration: 0.3s; }
+        }
+        
+        /* Small tablets (481px - 768px) */
+        @media (min-width: 481px) and (max-width: 768px) {
+            h1 { font-size: 3.5rem; }
+            h2 { font-size: 2rem; }
+            .message { font-size: 1.2rem; padding: 1.5rem; }
+            .gallery { gap: 1.25rem; }
+            .gallery img { height: 18rem; }
+        }
+        
+        /* Larger tablets and up */
+        @media (min-width: 769px) {
+            body { padding: 40px 20px; }
+        }
+        
+        /* Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            h1 { animation: none; }
+        }
+        
+        /* High Contrast */
+        @media (prefers-contrast: high) {
+            body { background: #000; color: #fff; }
+            h1, h2 { color: #fff; text-shadow: 1px 1px 2px #000; }
+            .message, .love-reasons {
+                background: rgba(255, 255, 255, 0.9);
+                border: 2px solid #000;
+                color: #000;
+            }
+            .gallery img { border-color: #000; }
+        }
+        
+        /* Forced Colors */
+        @media (forced-colors: active) {
+            .gallery img {
+                border-color: ButtonText;
+                forced-color-adjust: auto;
+            }
+            h1, h2 { forced-color-adjust: auto; color: CanvasText; }
+            .message, .love-reasons { 
+                border-color: ButtonText;
+                background: Canvas;
+                color: CanvasText;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <h1>Happy Birthday, My Love Kadija Kanu 💕</h1>
+    
+    <main id="main-content">
+        <div class="message">
+            <p>My dearest Kadija, every day with you feels like a gift, but today? It's your day to shine brighter than ever. You've filled my world with laughter, warmth, and a love I never knew was possible. On your birthday, I promise to keep cherishing you, supporting your dreams, and stealing kisses whenever I can. Here's to us, to more sunsets together, and to the beautiful woman who stole my heart. I love you more than words can say. 🥂❤️</p>
+        </div>
+        
+        <div class="love-reasons">
+            <h3>Why You Make My Heart Skip</h3>
+            <ul>
+                <li>The way your smile lights up even the cloudiest days.</li>
+                <li>Your endless kindness that makes everyone around you feel seen.</li>
+                <li>Those late-night talks where time just disappears.</li>
+                <li>Simply being you: my favorite person, my forever adventure.</li>
+                <!-- Add or edit these to make it personal! -->
+            </ul>
+        </div>
+        
+        <h2>Our Beautiful Moments Together 🌹</h2>
+        <div class="gallery">
+            <!-- Replace with your special photos! -->
+            <img src="K.jpg" alt="Your beatuful face " onclick="sparkleConfetti(event)">
+            <img src="Ka.png" alt="" onclick="sparkleConfetti(event)">
+            <img src="K3.jpg" alt="Just us, forever" onclick="sparkleConfetti(event)">
+            <!-- Add more: <img src="your-photo-url.jpg" alt="Our memory" onclick="sparkleConfetti(event)"> -->
+        </div>
+    </main>
+    
+    <footer>
+        <p>Made from the depths of my heart, for the love of my life. Can't wait to celebrate you tonight. Yours always, Mandala ✨</p>
+    </footer>
+
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    
+    <script>
+        // Check for reduced motion to disable confetti
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        
+        if (!reducedMotion) {
+            // Load burst: Romantic confetti shower
+            window.addEventListener('load', function() {
+                confetti({
+                    particleCount: 80,
+                    spread: 80,
+                    origin: { y: 0 },
+                    colors: ['#c2185b', '#f8bbd9', '#fce4ec', '#ad1457', '#f06292'], // Theme colors
+                    gravity: 0.5,
+                    drift: 0.1
+                });
+            });
+            
+            // Sparkle on image tap (localized burst)
+            function sparkleConfetti(event) {
+                const rect = event.target.getBoundingClientRect();
+                const x = (rect.left + rect.width / 2) / window.innerWidth;
+                const y = (rect.top + rect.height / 2) / window.innerHeight;
+                
+                confetti({
+                    particleCount: 50,
+                    spread: 45,
+                    origin: { x: x, y: y },
+                    colors: ['#c2185b', '#f8bbd9', '#ad1457'], // Sparkly pinks
+                    scalar: 0.8, // Smaller for tap feel
+                    gravity: 0.3
+                });
+            }
+        }
+    </script>
+</body>
+</html>
